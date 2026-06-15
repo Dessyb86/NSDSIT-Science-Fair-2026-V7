@@ -1,0 +1,82 @@
+
+:root {
+  --green: #005826;
+  --green-2: #08753a;
+  --black: #101010;
+  --light: #f6f8f5;
+  --white: #ffffff;
+  --gray: #5f6b63;
+  --border: #dbe7dc;
+  --shadow: 0 18px 50px rgba(0,0,0,.11);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--black);line-height:1.5}
+a{color:inherit}
+.top-nav{max-width:1180px;margin:0 auto 22px;display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.top-nav a{text-decoration:none;background:var(--white);border:1px solid var(--border);border-radius:999px;padding:8px 14px;font-weight:900;color:var(--green)}
+.hero{background:radial-gradient(circle at top right,rgba(0,88,38,.15),transparent 35%),linear-gradient(135deg,#fff 0%,#f3faf5 65%,#eaf5ed 100%);padding:30px 6vw 34px;border-bottom:8px solid var(--green)}
+.hero-grid{display:grid;grid-template-columns:190px 1fr;gap:30px;align-items:center;max-width:1180px;margin:auto}
+.hero-logo{width:100%;border-radius:50%;background:white;box-shadow:var(--shadow)}
+.eyebrow{margin:0 0 8px;text-transform:uppercase;letter-spacing:.12em;color:var(--green);font-weight:800;font-size:.82rem}
+h1{margin:0;font-size:clamp(2.4rem,7vw,5.7rem);line-height:.9;letter-spacing:-.05em;color:var(--green)}
+.tagline{display:inline-block;margin:20px 0 18px;padding:10px 18px;background:var(--green);color:white;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.event-details{display:flex;flex-wrap:wrap;gap:12px;font-weight:800}
+.event-details span{background:white;border:1px solid var(--border);border-left:6px solid var(--green);padding:12px 14px;border-radius:14px}
+.hero-actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.button{display:inline-block;text-decoration:none;background:var(--black);color:white;border-radius:999px;padding:12px 18px;font-weight:800}
+.button.secondary{background:var(--green)}
+.section{max-width:1180px;margin:0 auto;padding:54px 6vw}
+.poster-section{max-width:950px}
+.map-section{max-width:1450px}
+.section-heading{margin-bottom:24px}
+.section-heading.centered{text-align:center}
+.section-heading h2{margin:0;font-size:clamp(2rem,4vw,3.2rem);line-height:1}
+.note{color:var(--gray);font-weight:700}
+.poster-image{width:100%;border-radius:24px;box-shadow:var(--shadow);border:8px solid white;background:white}
+.schedule-grid{display:grid;grid-template-columns:1.2fr .85fr;gap:20px}
+.schedule-card{background:white;border:2px solid var(--green);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+.schedule-card.opening{grid-row:span 2}
+.schedule-card h3{margin:0;padding:18px 20px;background:var(--green);color:white;font-size:1.1rem;text-transform:uppercase;letter-spacing:.03em}
+.schedule-card.black h3{background:var(--black)}
+.timeline{list-style:none;margin:0;padding:18px}
+.timeline li{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:12px 0;border-bottom:1px solid var(--border)}
+.timeline li:last-child{border-bottom:0}
+.timeline time{color:var(--green);font-weight:900}
+.timeline small{color:var(--gray)}
+.map-frame{position:relative;width:100%;border:2px solid var(--green);border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:white}
+.map-image{display:block;width:100%;height:auto}
+.booth-overlays{position:absolute;inset:0}
+.booth-button{position:absolute;border:2px solid rgba(255,255,255,.0);border-radius:8px;background:rgba(0,88,38,.01);font-size:0;cursor:pointer;transition:background .15s ease,border .15s ease,box-shadow .15s ease,transform .15s ease}
+.booth-button:hover,.booth-button:focus{background:rgba(255,255,255,.28);border-color:rgba(255,255,255,.95);box-shadow:0 0 0 4px rgba(0,88,38,.35);transform:scale(1.05);outline:none}
+.table-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.table-card{background:white;border:1px solid var(--border);border-top:7px solid var(--green);border-radius:20px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.08);scroll-margin-top:20px}
+.table-card:target{outline:5px solid var(--green);box-shadow:0 0 0 12px rgba(0,88,38,.16),var(--shadow)}
+.table-card h3{margin:0 0 12px;color:var(--green)}
+.table-project-list{display:grid;gap:10px}
+.table-project-list a{display:block;text-decoration:none;padding:10px;border-radius:12px;background:#f5faf6;border-left:5px solid var(--green);font-weight:800}
+.table-project-list small{display:block;color:var(--gray);font-weight:600;margin-top:2px}
+.empty-slot{display:block;padding:10px;border-radius:12px;background:#f2f2f2;color:#777;font-weight:800}
+.controls{display:grid;grid-template-columns:1.4fr .5fr .8fr;gap:14px;background:white;padding:18px;border-radius:20px;border:1px solid var(--border);box-shadow:0 8px 30px rgba(0,0,0,.07);margin-bottom:18px}
+.controls label{font-weight:900;color:var(--green);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+input,select{width:100%;display:block;margin-top:7px;padding:13px 12px;border-radius:12px;border:1px solid var(--border);font-size:1rem;background:white}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+.stats div{background:var(--black);color:white;padding:13px 18px;border-radius:16px}
+.stats strong{display:block;font-size:1.8rem}
+.stats span{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;opacity:.8}
+.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.project-card{background:white;border:1px solid var(--border);border-top:7px solid var(--green);border-radius:20px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.08);scroll-margin-top:20px}
+.project-card:target{outline:5px solid var(--green);box-shadow:0 0 0 12px rgba(0,88,38,.16),var(--shadow)}
+.project-card h3{margin:8px 0 10px;line-height:1.15}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:#e8f5ec;color:var(--green);border:1px solid #c6e2ce;border-radius:999px;padding:5px 10px;font-size:.78rem;font-weight:900}
+.students{margin:10px 0 14px;padding:12px;border-radius:14px;background:#f5faf6;border-left:5px solid var(--green)}
+.students strong{display:block;margin-bottom:5px}
+.students span{display:block}
+.detail{margin-top:12px}
+.detail summary{cursor:pointer;color:var(--green);font-weight:900}
+.detail p{color:#2c332f;white-space:pre-line}
+footer{background:var(--black);color:white;padding:26px 6vw;display:flex;flex-wrap:wrap;gap:18px;justify-content:center;text-align:center;border-top:8px solid var(--green)}
+footer p{margin:0;font-weight:800}
+@media(max-width:1100px){.hero-grid,.schedule-grid,.controls,.project-grid,.table-directory{grid-template-columns:1fr}.schedule-card.opening{grid-row:auto}.hero-logo{max-width:160px;justify-self:center}}
+@media(max-width:620px){.timeline li{grid-template-columns:1fr;gap:4px}.hero{padding-top:26px}.booth-button{border-radius:4px}}

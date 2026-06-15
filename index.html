@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NSDSIT Science Fair 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="top-nav">
+      <a href="#poster">Poster</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#map">WayFinding Map</a>
+      <a href="#tables">Tables</a>
+      <a href="#projects">Projects</a>
+    </nav>
+
+    <div class="hero-grid">
+      <img class="hero-logo" src="nsdsit-logo.png" alt="NSDSIT school logo" />
+      <div>
+        <p class="eyebrow">Newark School of Data Science and Information Technology</p>
+        <h1>NSDSIT Science Fair 2026</h1>
+        <p class="tagline">Explore. Innovate. Impact.</p>
+        <div class="event-details">
+          <span>📅 Wednesday, June 17, 2026</span>
+          <span>🕘 9:00 AM – 2:30 PM</span>
+          <span>📍 NSDSIT Campus, Auditorium & Exhibition Halls</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#map" class="button">Open Interactive Map</a>
+          <a href="#projects" class="button secondary">Browse Projects</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="poster" class="section poster-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">Official Event Poster</p>
+        <h2>Science Fair Poster</h2>
+      </div>
+      <img class="poster-image" src="science-fair-poster.png" alt="NSDSIT Science Fair 2026 poster" />
+    </section>
+
+    <section id="schedule" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Event Program</p>
+        <h2>Science Fair Schedule</h2>
+      </div>
+
+      <div class="schedule-grid">
+        <article class="schedule-card opening">
+          <h3>🎤 Opening Ceremony & Student Research Presentations</h3>
+          <ul class="timeline">
+            <li><time>9:00 AM – 9:05 AM</time><span><strong>Welcome Remarks</strong><br>Mr. Jay Mariano</span></li>
+            <li><time>9:05 AM – 9:35 AM</time><span><strong>Keynote Session</strong><br>Mr. Patrick Barrett</span></li>
+            <li><time>9:35 AM – 9:40 AM</time><span><strong>Address from the Principal</strong><br>Dr. Liana Summey</span></li>
+            <li><time>9:40 AM – 9:45 AM</time><span><strong>Address from the STEM Department Chair</strong><br>Dr. Cluny Lavache</span></li>
+            <li><time>9:45 AM – 9:50 AM</time><span><strong>Introduction of Guest Speaker</strong><br>Diekolayomi Oyewole</span></li>
+            <li><time>9:50 AM – 10:25 AM</time><span><strong>Guest Speaker Presentation</strong><br>Dr. Gyoonho Kong<br><small>Data Scientist Solving Problems in Educational Policy, Office of Policy, Planning, Evaluation and Testing, Newark Board of Education</small></span></li>
+            <li><time>10:25 AM – 10:35 AM</time><span><strong>Exhibition Opening and Transition Remarks</strong><br>Mrs. Nana Asmah</span></li>
+            <li><time>10:35 AM – 11:10 AM</time><span><strong>Project Setup, Judge Orientation, and Networking</strong></span></li>
+          </ul>
+        </article>
+
+        <article class="schedule-card">
+          <h3>🧪 Project Exhibitions</h3>
+          <ul class="timeline compact">
+            <li><time>11:13 AM – 11:50 AM</time><span><strong>Seniors</strong><br>Period 4</span></li>
+            <li><time>11:52 AM – 12:29 PM</time><span><strong>Juniors</strong><br>Period 5</span></li>
+            <li><time>12:31 PM – 1:08 PM</time><span><strong>Sophomores</strong><br>Period 6</span></li>
+            <li><time>1:10 PM – 1:47 PM</time><span><strong>Freshmen</strong><br>Period 7</span></li>
+          </ul>
+        </article>
+
+        <article class="schedule-card black">
+          <h3>🏆 Closing Ceremony & Award Presentations</h3>
+          <ul class="timeline compact">
+            <li><time>1:50 PM – 1:55 PM</time><span><strong>Closing Remarks</strong><br>Mr. Jay Mariano</span></li>
+            <li><time>1:55 PM – 2:05 PM</time><span><strong>Recognition of Participants, Judges, and Community Partners</strong><br>Mrs. Lakeisha Stokes</span></li>
+            <li><time>2:05 PM – 2:20 PM</time><span><strong>Division Award Presentations</strong><br>Senior, Junior, Sophomore, and Freshman Division Awards</span></li>
+            <li><time>2:20 PM – 2:30 PM</time><span><strong>Grand Awards and Final Remarks</strong><br>Best in Show, Innovation Award, Community Impact Award, Principal's Choice Award, Closing Photo Opportunity</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="map" class="section map-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">Interactive Booth Directory</p>
+        <h2>NSDSIT Science Fair 2026 WayFinding Map</h2>
+        <p class="note">Click any project number on the map to jump directly to that project’s information.</p>
+      </div>
+
+      <div class="map-frame">
+        <img src="wayfinding-map.png" alt="NSDSIT Science Fair 2026 WayFinding Map" class="map-image" />
+        <div id="boothOverlays" class="booth-overlays"></div>
+      </div>
+    </section>
+
+    <section id="tables" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Table Directory</p>
+        <h2>Projects by Table</h2>
+      </div>
+      <div id="tableDirectory" class="table-directory"></div>
+    </section>
+
+    <section id="projects" class="section project-section">
+      <div class="section-heading">
+        <p class="eyebrow">Student Research Directory</p>
+        <h2>Science Fair Projects</h2>
+        <p class="note">Student names are displayed on separate lines for each project.</p>
+      </div>
+
+      <div class="controls">
+        <label>Search<input id="searchInput" type="search" placeholder="Search by project title, student, subject, project number, or question..." /></label>
+        <label>Grade<select id="gradeFilter"><option value="">All Grades</option></select></label>
+        <label>Subject / Club<select id="subjectFilter"><option value="">All Subjects / Clubs</option></select></label>
+      </div>
+
+      <div class="stats">
+        <div><strong id="projectCount">0</strong><span>Projects Shown</span></div>
+        <div><strong id="totalCount">0</strong><span>Total Projects</span></div>
+        <div><strong>59</strong><span>Mapped Projects</span></div>
+      </div>
+
+      <div id="projectGrid" class="project-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Learn More: <a href="https://www.nps.k12.nj.us/data-science/">www.nps.k12.nj.us/data-science/</a></p>
+    <p>Follow Us: @nps_datascience</p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
